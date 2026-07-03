@@ -1,32 +1,120 @@
-# React + TypeScript + Vite
+# 🍰 Naz Kaker – Custom Cakes & Cookies
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern bakery website built for a Norway-based cake and cookie business. The project features a clean, responsive UI with a strong focus on product presentation, promotions, and user experience.
 
-Currently, two official plugins are available:
+It includes custom cake and cookie listings, a dedicated “Special Offers” section with highlighted discounts, and a dynamic hero marquee showcasing promotions like custom cakes, cookie bundles, and ordering options. The interface is fully localized in Norwegian (Bokmål) and uses NOK (kr) pricing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Designed with a modern, conversion-focused layout, the site emphasizes simplicity, visual appeal, and easy navigation. Users can browse products, view detailed listings with images, and quickly access ordering and promotional offers.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎨 Design Style
 
-## Expanding the Oxlint configuration
+- Premium bakery ecommerce feel
+- Minimal and elegant layout
+- Soft tones: cream, beige, chocolate brown
+- Large product imagery
+- Clean typography
+- Lots of whitespace
+- Subtle animations only
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+---
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## ⚙️ Tech Stack
+
+- React (Vite)
+- TypeScript
+- Mantine UI
+- TailwindCSS
+- React Router
+- React Hook Form
+
+---
+
+## 🧭 Features
+
+### 🏠 Home Page
+
+- Hero section with CTA buttons
+- Featured cakes grid
+- Cookies section
+- Brand story section
+- Testimonials section
+
+---
+
+### 🧭 Navbar
+
+- Sticky navigation bar
+- Logo on the left
+- Links: Hjem, Om oss, Kontakt
+- Search bar (UI only)
+
+---
+
+### 🔁 Moving Info Banner (Hero Enhancement)
+
+A continuous scrolling banner (right → left) under hero section:
+
+Example content:
+
+- 🎂 Nye kaker hver uke
+- 🍪 Spesialtilbud på cookies
+- 🚚 Levering i hele Norge
+- ⭐ Premium håndlaget bakverk
+
+---
+
+### 🔥 Spesialtilbud Section (IMPORTANT)
+
+A highlighted section for discounted products:
+
+- Cakes and cookies on offer
+- Discount badges (e.g. -20%)
+- Old price (strikethrough)
+- New price in kr
+- Visually highlighted background (warm cream/gold tone)
+
+---
+
+### ℹ️ About Page
+
+- Bakery story in Norwegian
+- Minimal editorial layout
+- Clean typography and spacing
+
+---
+
+### 📞 Contact Page (React Hook Form)
+
+## ⚙️ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Nirush4/nazkaker
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+```bash
+cd nazkaker
+```
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+## Author 👨‍💻​
+
+• Nirushan Rajamanoharan (@Nirush4)
+
+**Happy coding!**
