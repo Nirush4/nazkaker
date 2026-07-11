@@ -6,7 +6,7 @@ import { IconSearch, IconMenu2, IconX } from '@tabler/icons-react';
 import { allCakes, allCookies } from '../data/products';
 import { searchProducts } from '../utils/searchProducts';
 
-// const logo = '/logo.jpg';
+const logo = '/logo.jpg';
 
 const navLinks = [
   { to: '/', label: 'Hjem' },
@@ -73,7 +73,7 @@ export default function Navbar() {
       >
         {/* Logo */}
 
-        {/* <NavLink
+        <NavLink
           to='/'
           className='flex items-center shrink-0'
           aria-label='Naz Kaker home'
@@ -85,14 +85,14 @@ export default function Navbar() {
               h-14
               w-auto
 
-              rounded-full
+              rounded-md
 
               object-cover
 
               bg-white
             '
           />
-        </NavLink> */}
+        </NavLink>
 
         {/* Desktop Navigation */}
 
