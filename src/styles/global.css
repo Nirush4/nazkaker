@@ -26,6 +26,7 @@ body {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -41,4 +42,9 @@ body {
   .marquee-track {
     animation: none;
   }
+}
+
+
+h2 {
+  font-family: "'Playfair Display', serif";
 }
