@@ -4,7 +4,7 @@ import HeroMarquee from './HeroMarquee';
 
 export default function HomeHero() {
   return (
-    <section className='relative w-full overflow-hidden'>
+    <section id='home' className='relative w-full overflow-hidden'>
       <div
         className='
           relative

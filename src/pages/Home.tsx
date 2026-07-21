@@ -4,6 +4,7 @@ import CustomCakes from '../components/CustomCakes';
 import CookiesSection from '../components/CookiesSection';
 import ReviewsSection from '../components/ReviewsSection';
 import ContactSection from '../components/ContactSection';
+import AboutSection from '../components/AboutSection';
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       <SpecialOffers />
 
       <CustomCakes />
+
+      <AboutSection />
 
       <CookiesSection />
 
