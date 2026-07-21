@@ -1,5 +1,6 @@
 import { Button } from '@mantine/core';
-import { Link } from 'react-router-dom';
+
+import { scrollToSection } from '../utils/scrollToSection';
 
 const images = [
   {
@@ -27,11 +28,11 @@ const images = [
 export default function CustomCakes() {
   return (
     <section
+      id='kaker'
       aria-labelledby='custom-cakes-title'
       className='bg-white py-24 px-6 overflow-hidden'
     >
       <div className='mx-auto max-w-7xl grid gap-20 lg:grid-cols-2 items-center'>
-        {/* ================= Gallery ================= */}
         <div aria-label='Bildegalleri av spesialkaker' className='space-y-4'>
           {/* Hero */}
           <figure className='group relative overflow-hidden rounded-[32px] h-[300px] sm:h-[420px] lg:h-[460px] bg-[#F8F4F0] shadow-md hover:shadow-2xl transition-all duration-500'>
@@ -145,8 +146,7 @@ export default function CustomCakes() {
 
           {/* Button */}
           <Button
-            component={Link}
-            to='/contact'
+            onClick={() => scrollToSection('contact')}
             radius='xl'
             size='md'
             aria-label='Gå til kontaktsiden for å bestille spesialkake'

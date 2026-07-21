@@ -1,6 +1,6 @@
 import { Button } from '@mantine/core';
 import { motion, type Variants } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { scrollToSection } from '../utils/scrollToSection';
 
 const images = {
   hero: '/kake1.jpg',
@@ -79,6 +79,7 @@ function ImageBlock({
 export default function CookiesSection() {
   return (
     <section
+      id='cookies'
       aria-labelledby='cookies-title'
       className='bg-[#faf7f1] text-[#211914]'
     >
@@ -318,20 +319,19 @@ export default function CookiesSection() {
           </p>
 
           <Button
-            component={Link}
-            to='/cookies'
+            onClick={() => scrollToSection('contact')}
             radius='0'
             size='lg'
             className='
-              mt-8
-              h-12
-              bg-[#211914]
-              px-10
-              text-sm
-              uppercase
-              tracking-[0.2em]
-              hover:bg-black
-            '
+    mt-8
+    h-12
+    bg-[#211914]
+    px-10
+    text-sm
+    uppercase
+    tracking-[0.2em]
+    hover:bg-black
+  '
           >
             Bestill nå
           </Button>

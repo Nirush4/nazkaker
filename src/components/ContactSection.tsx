@@ -46,6 +46,7 @@ export default function ContactSection() {
 
   return (
     <section
+      id='contact'
       aria-labelledby='contact-title'
       className='
         py-24
