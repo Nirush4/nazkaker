@@ -382,7 +382,7 @@ export default function ContactSection() {
                   '
                 />
 
-                <span>Ønsker å bli kontaktet på e-post (engelsk)</span>
+                <span>Ønsker å bli kontaktet på e-post</span>
               </label>
 
               <label
@@ -405,7 +405,7 @@ export default function ContactSection() {
                   '
                 />
 
-                <span>Ønsker å bli kontaktet på telefon (engelsk)</span>
+                <span>Ønsker å bli kontaktet på telefon</span>
               </label>
             </div>
 
