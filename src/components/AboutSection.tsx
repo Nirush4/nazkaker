@@ -36,7 +36,6 @@ export default function AboutSection() {
           className='
             relative
             overflow-hidden
-            rounded-[40px]
             shadow-xl
           '
         >
