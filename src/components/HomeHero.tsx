@@ -29,7 +29,7 @@ export default function HomeHero() {
           '
           aria-hidden='true'
         >
-          <source src='/hero_video.mov' type='video/mp4' />
+          <source src='/hero_video.mp4' type='video/mp4' />
         </video>
 
         <div

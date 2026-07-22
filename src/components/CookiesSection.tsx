@@ -3,11 +3,11 @@ import { motion, type Variants } from 'framer-motion';
 import { scrollToSection } from '../utils/scrollToSection';
 
 const images = {
-  hero: '/kake1.jpg',
-  story: '/kake2.jpg',
-  gallery1: '/kake3.jpg',
-  gallery2: '/kake4.jpg',
-  gallery3: '/kake5.jpg',
+  hero: '/cookie1.jpg',
+  story: '/cookie_video.mp4',
+  gallery1: '/cookie2.jpg',
+  gallery2: '/cookie3.jpg',
+  gallery3: '/cookie4.jpg',
 };
 
 const fadeUp: Variants = {
@@ -204,11 +204,20 @@ export default function CookiesSection() {
         '
         >
           <div className='md:col-span-7'>
-            <ImageBlock
-              src={images.story}
-              alt="Dekorerte cookies laget hos Naz's Cookies"
-              className='h-[420px] md:h-[560px]'
-            />
+            <motion.video
+              variants={imageReveal}
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.2 }}
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster='/cookie2.jpg'
+              className='h-[420px] w-full object-cover md:h-[560px]'
+            >
+              <source src='/cookie_video.mp4' type='video/mp4' />
+            </motion.video>
           </div>
 
           <motion.div
