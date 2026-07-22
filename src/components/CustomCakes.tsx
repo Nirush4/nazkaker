@@ -35,7 +35,7 @@ export default function CustomCakes() {
       <div className='mx-auto max-w-7xl grid gap-20 lg:grid-cols-2 items-center'>
         <div aria-label='Bildegalleri av spesialkaker' className='space-y-4'>
           {/* Hero */}
-          <figure className='group relative overflow-hidden rounded-[32px] h-[300px] sm:h-[420px] lg:h-[460px] bg-[#F8F4F0] shadow-md hover:shadow-2xl transition-all duration-500'>
+          <figure className='group relative overflow-hidden h-[300px] sm:h-[420px] lg:h-[460px] bg-[#F8F4F0] shadow-md hover:shadow-2xl transition-all duration-500'>
             <img
               src={images[0].src}
               alt={images[0].alt}
@@ -54,7 +54,7 @@ export default function CustomCakes() {
             {images.slice(1).map((image) => (
               <figure
                 key={image.src}
-                className='group relative overflow-hidden rounded-[28px] h-[220px] sm:h-[260px] lg:h-[290px] bg-[#F8F4F0] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-500'
+                className='group relative overflow-hidden h-[220px] sm:h-[260px] lg:h-[290px] bg-[#F8F4F0] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-500'
               >
                 <img
                   src={image.src}
